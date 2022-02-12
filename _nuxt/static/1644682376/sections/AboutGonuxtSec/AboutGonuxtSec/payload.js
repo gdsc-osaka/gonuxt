@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/sections/AboutGonuxtSec/AboutGonuxtSec", {data:[{}],fetch:{},mutations:void 0});
