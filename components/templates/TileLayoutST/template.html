@@ -1,0 +1,11 @@
+<v-row class="d-flex justify-center align-center gont-tile-layout-template">
+  <v-col
+    cols="6"
+    md="4"
+    class="gonuxt-tile"
+    v-for="tile in tiles"
+    :key="tile.title"
+  >
+    <PhotoTileA :imgSrc="tile.imgSrc" :title="tile.title" />
+  </v-col>
+</v-row>
