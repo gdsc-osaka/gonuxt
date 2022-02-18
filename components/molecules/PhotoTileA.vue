@@ -15,7 +15,7 @@
           <h3 class="font-weight-bold" :class="titleSize" v-text="title"></h3>
           <p v-text="txtBody"></p>
           <template v-if="existsLink">
-            <a :href="link.href">{{ link.txt }}</a>
+            <NuxtLink :to="link.href">{{ link.txt }}</NuxtLink>
           </template>
         </v-col>
       </v-row>
@@ -51,10 +51,6 @@ export default {
         href: '',
         txt: 'None',
       }),
-    },
-    bgcolor: {
-      type: String,
-      default: '#ffffff',
     },
     txtPosition: {
       type: String,
