@@ -6,11 +6,16 @@
       gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
     >
       <v-row class="d-flex-box justify-center text-center">
-        <v-col cols="10" class="gonuxt-photo-tile-contents">
-          <h3 v-text="title"></h3>
+        <v-col
+          cols="12"
+          md="10"
+          class="gonuxt-photo-tile-contents"
+          :class="getTextBoxCSS"
+        >
+          <h3 class="font-weight-bold" :class="titleSize" v-text="title"></h3>
           <p v-text="txtBody"></p>
           <template v-if="existsLink">
-            <a :href="link">{{ linkTxt }}</a>
+            <a :href="link.href">{{ link.txt }}</a>
           </template>
         </v-col>
       </v-row>
@@ -19,7 +24,6 @@
 </template>
 
 <script scoped>
-/* eslint-disable no-console */
 import config from '@/assets/config'
 
 export default {
@@ -33,21 +37,28 @@ export default {
       type: String,
       default: 'Photo Tile A',
     },
+    titleSize: {
+      type: String,
+      default: 'text-h3',
+    },
     txtBody: {
       type: String,
       default: 'This is a PhotoTileA component.',
     },
     link: {
-      type: String,
-      default: '/',
-    },
-    linkTxt: {
-      type: String,
-      default: 'link text',
+      type: Object,
+      default: () => ({
+        href: '',
+        txt: 'None',
+      }),
     },
     bgcolor: {
       type: String,
       default: '#ffffff',
+    },
+    txtPosition: {
+      type: String,
+      default: 'center',
     },
   },
   data: () => ({
@@ -55,7 +66,15 @@ export default {
   }),
   computed: {
     existsLink() {
-      return this.link.length > 0
+      return this.link != null
+    },
+    getTextBoxCSS() {
+      if (this.txtPosition === 'top') {
+        return 'gonuxt-text-box-top'
+      } else if (this.txtPosition === 'bottom') {
+        return 'gonuxt-text-box-bottom'
+      }
+      return 'gonuxt-text-box-center'
     },
   },
 }
@@ -76,6 +95,20 @@ export default {
       text-decoration: underline;
       color: white;
     }
+  }
+
+  .gonuxt-text-box-center {
+    position: inherit;
+  }
+  .gonuxt-text-box-top {
+    position: absolute;
+    top: 10%;
+    padding: 0;
+  }
+  .gonuxt-text-box-bottom {
+    position: absolute;
+    bottom: 10%;
+    padding: 0;
   }
 }
 </style>
