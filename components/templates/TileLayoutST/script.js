@@ -25,7 +25,7 @@ export default {
         const link = (i % 2 === 0) ? null : { href: "/", txt: "link text" }
 
         tiles.push({
-          title: `Card A${i}`,
+          title: `Card ${titleSize}`,
           titleSize: titleSize,
           imgSrc: require(`@/assets/img/gonuxt/sample0${imgIndex}.jpg`),
           txtPosition: pos,
