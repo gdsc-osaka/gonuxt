@@ -1,8 +1,7 @@
-// import TextCenterST from '@/components/templates/TextCenterST/TextCenterST.vue'
 import TextCenterST from '@/components/templates/TextCenterST/TextCenterST.vue'
-import TitleImgCenterST from '@/components/templates/TitleImgCenterST/TitleImgCenterST.vue'
+import SampleLayoutST from '@/components/templates/SampleLayoutST/SampleLayoutST.vue'
 
 export default {
   name: 'TemplateShowcaseSec',
-  components: { TextCenterST, TitleImgCenterST },
+  components: { TextCenterST, SampleLayoutST },
 }
