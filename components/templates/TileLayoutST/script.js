@@ -20,7 +20,7 @@ export default {
 
       for (let i = 0; i < ncol; i++) {
         const titleSize = titleSizeList[i % titleSizeList.length];
-        const imgIndex = i % 2 + 1;
+        const imgIndex = i % 3 + 1;
         const pos = positions[i % positions.length];
         const link = (i % 2 === 0) ? null : { href: "/", txt: "link text" }
 
