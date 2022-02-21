@@ -3,7 +3,7 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: require("@/assets/img/teaser.jpeg"),
+      default: require("@/assets/img/gonuxt/sample01.jpg"),
     },
   },
 }

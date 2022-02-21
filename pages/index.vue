@@ -12,8 +12,5 @@ import AboutGonuxtSec from '@/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
 export default {
   name: 'IndexPage',
   components: { KeyVisualSec, AboutGonuxtSec },
-  data: () => ({
-    teaserImgSrc: require('@/assets/img/teaser.jpeg'),
-  }),
 }
 </script>
