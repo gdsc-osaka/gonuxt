@@ -26,19 +26,19 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Sample Card',
+      default: 'Card Title',
     },
     txtBody: {
       type: String,
-      default: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
-    },
+      default: '(Text Body) - djfaidsjfoiaj iodjfaidsjf oiajiodjfaids jf;oiajiodjfa idsjf;oia jiodjfai dsjf;oiaji odjfaid sjf;oiajiodjfa  idsjf;oiajio djfaidsjf;oiaji odjfaidsj f;oiajiodjf aidsjf;oiajiod jfaidsjf;oiajiodj faidsjf;o iajio',
+    }, 
     btnTxt: {
       type: String,
       default: 'Sample Button Text'
     },
     subTxt: {
       type: String,
-      default: 'Sample Sub Text'
+      default: 'Sample Subtext'
     },
     btnColor: {
       type: String,
