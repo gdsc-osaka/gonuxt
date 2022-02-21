@@ -13,7 +13,7 @@ export default {
   name: 'IndexPage',
   components: { KeyVisualSec, AboutGonuxtSec },
   data: () => ({
-    teaserImgSrc: require('@/assets/image/teaser.jpeg'),
+    teaserImgSrc: require('@/assets/img/teaser.jpeg'),
   }),
 }
 </script>
