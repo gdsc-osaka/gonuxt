@@ -1,7 +1,7 @@
-import SampleCard from '@/components/organisms/SampleCard/SampleCard.vue'
+import TitleCenter from '@/components/organisms/TitleCenter/TitleCenter.vue'
 
 export default {
-  components: { SampleCard },
+  components: { TitleCenter },
   data() {
     return {
       imgSrc: require('@/assets/img/gonuxt/sample01.jpg'),

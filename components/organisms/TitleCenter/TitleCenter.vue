@@ -26,7 +26,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Card Title',
+      default: 'Title (Center)',
     },
     txtBody: {
       type: String,
