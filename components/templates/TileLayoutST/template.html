@@ -1,0 +1,43 @@
+<v-container fluid>
+  <v-row class="d-flex justify-center align-center gont-tile-layout-template">
+    <v-col cols="12">
+      <h3>SM = single column, MD=2 columns</h3>
+    </v-col>
+    <v-col
+      cols="12"
+      md="6"
+      lg="4"
+      class="gonuxt-tile"
+      v-for="tile in tiles2Col"
+      :key="tile.title"
+    >
+      <PhotoTileA
+        :imgSrc="tile.imgSrc"
+        :title="tile.title"
+        :titleSize="tile.titleSize"
+        :txtPosition="tile.txtPosition"
+        :link="tile.link"
+      />
+    </v-col>
+  </v-row>
+  <v-row class="d-flex justify-center align-center gont-tile-layout-template">
+    <v-col cols="12">
+      <h3>SM = single column, MD=4 columns</h3>
+    </v-col>
+    <v-col
+      cols="6"
+      md="3"
+      class="gonuxt-tile"
+      v-for="tile in tiles4Col"
+      :key="tile.title"
+    >
+      <PhotoTileA
+        :imgSrc="tile.imgSrc"
+        :title="tile.title"
+        :titleSize="tile.titleSize"
+        :txtPosition="tile.txtPosition"
+        :link="tile.link"
+      />
+    </v-col>
+  </v-row>
+</v-container>
