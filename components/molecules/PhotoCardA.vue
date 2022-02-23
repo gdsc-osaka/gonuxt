@@ -7,31 +7,38 @@
           :src="imgSrc"
           :aspect-ratio="16 / 9"
         >
-          <v-expand-transition>
-            <v-row
+          <v-fade-transition>
+            <v-overlay
               v-if="hover"
-              class="transition-fast-in-fast-out darken-2 v-card--reveal"
-              :class="bgColor"
+              absolute
+              :color="bgColor"
+              class="darken-2"
+              :opacity="opacity"
             >
-              <v-col
-                cols="12"
-                class="white--text text-center pb-0 gnt-photo-card-text"
-                :class="titleSize"
-                v-text="title"
-              ></v-col>
-              <v-col cols="12" class="d-flex justify-center pt-1 pb-6">
-                <v-btn
-                  small
-                  color="white"
-                  elevation="0"
-                  rounded
-                  class="text--darken-2 gnt-photo-card-text"
-                  :class="getPopupTxtColor"
-                  >See More</v-btn
-                >
-              </v-col>
-            </v-row>
-          </v-expand-transition>
+              <v-row
+                v-if="hover"
+                class="transition-fast-in-fast-out v-card--reveal"
+              >
+                <v-col
+                  cols="12"
+                  class="white--text text-center pb-0 gnt-photo-card-text"
+                  :class="titleSize"
+                  v-text="title"
+                ></v-col>
+                <v-col cols="12" class="d-flex justify-center pt-1 pb-6">
+                  <v-btn
+                    small
+                    color="white"
+                    elevation="0"
+                    rounded
+                    class="text--darken-2 gnt-photo-card-text"
+                    :class="getPopupTxtColor"
+                    >{{ txtButton }}</v-btn
+                  >
+                </v-col>
+              </v-row>
+            </v-overlay>
+          </v-fade-transition>
         </v-img>
         <v-card-text class="text--primary text-right gnt-photo-card-text">
           <div v-text="txtBody"></div>
@@ -63,9 +70,17 @@ export default {
       type: String,
       default: '(txtBody) 2022-03-01開催',
     },
+    txtButton: {
+      type: String,
+      default: 'See More',
+    },
     bgColor: {
       type: String,
       default: 'primary',
+    },
+    opacity: {
+      type: Number,
+      default: 0.9,
     },
   },
   data: () => ({
