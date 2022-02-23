@@ -1,0 +1,88 @@
+<template>
+  <v-hover v-slot="{ hover }" open-delay="200">
+    <v-sheet :elevation="hover ? 10 : 2" :class="{ 'on-hover': hover }">
+      <v-card class="gnt-photo-card">
+        <v-img
+          class="white--text align-end"
+          :src="imgSrc"
+          :aspect-ratio="16 / 9"
+        >
+          <v-expand-transition>
+            <v-row
+              v-if="hover"
+              class="transition-fast-in-fast-out darken-2 v-card--reveal"
+              :class="bgColor"
+            >
+              <v-col
+                cols="12"
+                class="white--text text-center pb-0 gnt-photo-card-text"
+                :class="titleSize"
+                v-text="title"
+              ></v-col>
+              <v-col cols="12" class="d-flex justify-center pt-1 pb-6">
+                <v-btn
+                  small
+                  color="white"
+                  elevation="0"
+                  rounded
+                  class="text--darken-2 gnt-photo-card-text"
+                  :class="getPopupTxtColor"
+                  >See More</v-btn
+                >
+              </v-col>
+            </v-row>
+          </v-expand-transition>
+        </v-img>
+        <v-card-text class="text--primary text-right gnt-photo-card-text">
+          <div v-text="txtBody"></div>
+        </v-card-text>
+      </v-card>
+    </v-sheet>
+  </v-hover>
+</template>
+
+<script scoped>
+import config from '@/assets/config'
+
+export default {
+  name: 'PhotoCardA',
+  props: {
+    imgSrc: {
+      type: String,
+      default: require('@/assets/img/gonuxt/sample01.jpg'),
+    },
+    title: {
+      type: String,
+      default: 'PhotoCard Title',
+    },
+    titleSize: {
+      type: String,
+      default: 'text-h3',
+    },
+    txtBody: {
+      type: String,
+      default: '(txtBody) 2022-03-01開催',
+    },
+    bgColor: {
+      type: String,
+      default: 'primary',
+    },
+  },
+  data: () => ({
+    brandName: config.brand.nameShort,
+  }),
+  computed: {
+    getPopupTxtColor() {
+      return this.bgColor + '--text'
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+.gnt-photo-card {
+  .gnt-photo-card-text {
+    text-decoration: none !important;
+  }
+}
+</style>
