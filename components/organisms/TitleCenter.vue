@@ -11,7 +11,7 @@
           rounded
           class="white--text"
           :color="btnColor"
-          :to="link" 
+          :to="link"
         >
           {{ btnTxt }}
         </v-btn>
@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: 'TitleCenter',
   props: {
     title: {
       type: String,
@@ -30,24 +31,25 @@ export default {
     },
     txtBody: {
       type: String,
-      default: '(Text Body) - djfaidsjfoiaj iodjfaidsjf oiajiodjfaids jf;oiajiodjfa idsjf;oia jiodjfai dsjf;oiaji odjfaid sjf;oiajiodjfa  idsjf;oiajio djfaidsjf;oiaji odjfaidsj f;oiajiodjf aidsjf;oiajiod jfaidsjf;oiajiodj faidsjf;o iajio',
-    }, 
+      default:
+        '(Text Body) - djfaidsjfoiaj iodjfaidsjf oiajiodjfaids jf;oiajiodjfa idsjf;oia jiodjfai dsjf;oiaji odjfaid sjf;oiajiodjfa  idsjf;oiajio djfaidsjf;oiaji odjfaidsj f;oiajiodjf aidsjf;oiajiod jfaidsjf;oiajiodj faidsjf;o iajio',
+    },
     btnTxt: {
       type: String,
-      default: 'Sample Button Text'
+      default: 'Sample Button Text',
     },
     subTxt: {
       type: String,
-      default: 'Sample Subtext'
+      default: 'Sample Subtext',
     },
     btnColor: {
       type: String,
-      default: 'black'
+      default: 'black',
     },
     link: {
       type: String,
-      default: '/'
-    }
+      default: '/',
+    },
   },
 }
 </script>
