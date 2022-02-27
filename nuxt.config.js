@@ -56,7 +56,7 @@ export default {
     dirs: [
       '~/components/atoms/',
       '~/components/molecules',
-      '~/components/organisims',
+      '~/components/organisms',
     ]
   },
 
