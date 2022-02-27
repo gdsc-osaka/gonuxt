@@ -4,9 +4,7 @@
   </v-container>
 </template>
 
-<script>
-// import Meta from '~/assets/mixins/meta'
-
+<script scoped>
 import TemplateShowcaseSec from '@/sections/template/TemplateShowcaseSec/TemplateShowcaseSec/'
 
 export default {
