@@ -21,7 +21,7 @@
   </v-footer>
 </template>
 
-<script scoped>
+<script>
 import config from '@/assets/config'
 export default {
   name: 'FooterBasic',

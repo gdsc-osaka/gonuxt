@@ -13,7 +13,7 @@
   </v-app-bar>
 </template>
 
-<script scoped>
+<script>
 import config from '@/assets/config'
 
 export default {
