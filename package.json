@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-templates",
-  "version": "1.0.0",
+  "name": "gonuxt",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt",
