@@ -1,4 +1,4 @@
-import TitleCenter from '@/components/organisms/TitleCenter/TitleCenter.vue'
+import TitleCenter from '@/components/organisms/TitleCenter.vue'
 
 export default {
   components: { TitleCenter },
