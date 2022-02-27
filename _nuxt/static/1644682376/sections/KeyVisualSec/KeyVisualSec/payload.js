@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/sections/KeyVisualSec/KeyVisualSec", {data:[{}],fetch:{},mutations:void 0});

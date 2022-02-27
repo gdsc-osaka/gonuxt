@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{399:function(n,e,t){"use strict";t.r(e);var r=t(96);e.default={name:"HeaderBasic",props:{brandNameFontWeight:{type:String,default:"font-weight-bold"}},data:function(){return{brandName:r.a.brand.nameShort}}}}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{396:function(n,o,e){"use strict";e.r(o),o.default={name:"GONuxTLogo",props:{fontSize:{type:String,default:""}}}}}]);
