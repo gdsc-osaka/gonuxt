@@ -1,9 +1,5 @@
-/* eslint-disable no-console */
-import PhotoCardA from '@/components/molecules/PhotoCardA'
-
 export default {
   name: 'CardGalleryLayoutST',
-  components: { PhotoCardA },
   data: () => ({
     tiles2Col: [],
     tiles4Col: [],

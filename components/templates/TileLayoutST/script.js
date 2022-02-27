@@ -1,9 +1,5 @@
-/* eslint-disable no-console */
-import PhotoTileA from '@/components/molecules/PhotoTileA'
-
 export default {
   name: 'TileLayoutST',
-  components: { PhotoTileA },
   data: () => ({
     tiles2Col: [],
     tiles4Col: [],
