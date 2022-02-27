@@ -22,7 +22,7 @@ export default {
         tiles.push({
           title: `PhotoCard ${titleSize}`,
           titleSize: titleSize,
-          imgSrc: require(`@/assets/img/gonuxt/sample0${imgIndex}.jpg`),
+          imgSrc: require(`@/assets/gonuxt/img/sample0${imgIndex}.jpg`),
           txtPosition: pos,
           link: link,
         });
