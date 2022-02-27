@@ -94,7 +94,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .gnt-photo-card {
   .gnt-photo-card-text {
     text-decoration: none !important;

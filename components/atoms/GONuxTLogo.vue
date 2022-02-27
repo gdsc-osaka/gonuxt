@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .gont-logo-text {
   letter-spacing: -0.5em;
 

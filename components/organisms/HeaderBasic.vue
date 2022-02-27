@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/styles/app';
 
 .nt-app-bar-link {
