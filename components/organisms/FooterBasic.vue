@@ -21,7 +21,7 @@
   </v-footer>
 </template>
 
-<script scoped>
+<script>
 import config from '@/assets/config'
 export default {
   name: 'FooterBasic',
@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/styles/app';
 
 .v-footer {
