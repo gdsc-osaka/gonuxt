@@ -5,6 +5,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   }
 } : {}
 
+const faviconPath = process.env.DEPLOY_ENV === 'GH_PAGES' ? "/gonuxt/favicon-32x32.ico" : "/favicon-32x32.ico"
+
 export default {
   ...routerBase,
 
@@ -24,7 +26,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/gonuxt/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: faviconPath }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
