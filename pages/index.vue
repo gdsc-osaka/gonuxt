@@ -12,5 +12,9 @@ import AboutGonuxtSec from '@/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
 export default {
   name: 'IndexPage',
   components: { KeyVisualSec, AboutGonuxtSec },
+  head: {
+    titleTemplate: null,
+    title: 'GONuxT',
+  },
 }
 </script>
