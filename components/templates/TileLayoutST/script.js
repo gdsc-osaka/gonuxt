@@ -1,9 +1,5 @@
-/* eslint-disable no-console */
-import PhotoTileA from '@/components/molecules/PhotoTileA'
-
 export default {
   name: 'TileLayoutST',
-  components: { PhotoTileA },
   data: () => ({
     tiles2Col: [],
     tiles4Col: [],
@@ -27,7 +23,7 @@ export default {
         tiles.push({
           title: `Card ${titleSize}`,
           titleSize: titleSize,
-          imgSrc: require(`@/assets/img/gonuxt/sample0${imgIndex}.jpg`),
+          imgSrc: require(`@/assets/gonuxt/img/sample0${imgIndex}.jpg`),
           txtPosition: pos,
           link: link,
         });

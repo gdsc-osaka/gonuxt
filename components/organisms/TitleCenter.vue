@@ -11,7 +11,7 @@
           rounded
           class="white--text"
           :color="btnColor"
-          :to="link" 
+          :to="link"
         >
           {{ btnTxt }}
         </v-btn>
@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: 'TitleCenter',
   props: {
     title: {
       type: String,

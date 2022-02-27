@@ -5,6 +5,9 @@ gonuxt is a template library for nuxt.js build by Google Developer Student Club 
 ## Build Setup
 
 ```bash
+# Clone this repo
+$ git clone --recursive git@github.com:gdsc-osaka/gonuxt.git
+
 # install dependencies
 $ npm install
 
