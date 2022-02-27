@@ -1,7 +1,7 @@
 export default {
   data() {
     return {
-      imgSrc: require('@/assets/img/gonuxt/sample01.jpg'),
+      imgSrc: require('@/assets/gonuxt/img/sample01.jpg'),
     }
   },
 }
