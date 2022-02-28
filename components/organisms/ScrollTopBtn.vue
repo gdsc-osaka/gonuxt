@@ -1,7 +1,7 @@
 <template>
   <div id="btnmenu" v-scroll="handleScroll" class="btn-container">
-    <v-btn fab small :color="color" @click="scrollTop">
-      <v-icon color="white">mdi-chevron-up</v-icon>
+    <v-btn fab elevation="6" :color="color" @click="scrollTop">
+      <v-icon large color="white">mdi-chevron-up</v-icon>
     </v-btn>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: 'blue-grey lighten-3',
+      default: 'warning',
     },
   },
   methods: {
@@ -27,7 +27,7 @@ export default {
       btm =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight
-      if (window.scrollY > 100) {
+      if (window.scrollY > 100 && window.scrollY < btm - 100) {
         el.setAttribute(
           'style',
           'opacity: 1; transform: translate3d(-64px, 0, 0)'
