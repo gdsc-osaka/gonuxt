@@ -13,8 +13,8 @@ export default {
       default: 'fadeIn',
     },
     fadeInTime: {
-      type: Number,
-      default: 1,
+      type: String,
+      default: "1",
     },
   },
   methods: {
@@ -22,9 +22,9 @@ export default {
       el = document.getElementById(this.elementId)
       pos = el.getBoundingClientRect().top
       if (pos < 280) {
-        el.setAttribute('style', 'visibly 1; transition-duration: ' + String(this.fadeInTime) + 's; transform: translateY(0px);')
+        el.setAttribute('style', 'visibly 1; transition-duration: ' + this.fadeInTime + 's; transform: translateY(0px);')
       } else {
-        el.setAttribute('style', 'opacity: 0; transition-duration: ' + String(this.fadeInTime) + 's; transform: translateY(50px);')
+        el.setAttribute('style', 'opacity: 0; transition-duration: ' + this.fadeInTime + 's; transform: translateY(50px);')
       }
     },
   },
