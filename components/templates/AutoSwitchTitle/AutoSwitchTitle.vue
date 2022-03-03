@@ -2,8 +2,8 @@
   <div>
     <div class="slide-outer">
       <transition name="fade">
-        <div v-for="idx in slidesIdx" :key="idx" class="slide-inner">
-          <img class="slide-img" :src="slides[currentSlide].img" />
+        <div v-for="slide in Slides" :key="slide.id" class="slide-inner">
+          <img class="slide-img" :src="slide.img" />
         </div>
       </transition>
     </div>
@@ -26,7 +26,7 @@ export default {
     }
   },
   computed: {
-    slidesIdx() {
+    Slides() {
       return this.slides.filter(slide => {
         return slide.id === this.currentSlide;
       })
@@ -70,11 +70,11 @@ export default {
 }
 
 .fade-enter-active {
-  transition: all 5s ease;
+  transition: all 1s ease;
 }
 
 .fade-leave-active {
-  transition: all 5s ease;
+  transition: all 1s ease;
   position: absolute;
 }
 
