@@ -6,6 +6,11 @@
           <img class="slide-img" :src="slide.img" />
         </div>
       </transition>
+      <div class="slide-element">
+        <p>最高のバーミキュラ体験を。</p>
+        <h1>VERMICULAR</h1>
+        <h2>HOUSE</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -27,10 +32,10 @@ export default {
   },
   computed: {
     Slides() {
-      return this.slides.filter(slide => {
-        return slide.id === this.currentSlide;
+      return this.slides.filter((slide) => {
+        return slide.id === this.currentSlide
       })
-    }
+    },
   },
   created() {
     this.timer = setInterval(() => {
@@ -49,32 +54,34 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/styles/app';
+
 .slide-outer {
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: 500px;
+  height: 530px;
   display: flex;
 }
 
 .slider-inner {
   position: absolute;
   width: 100vw;
-  height: 500px;
+  height: 530px;
 }
 
 .slide-img {
   width: 100vw;
-  height: 500px;
+  height: 530px;
   object-fit: cover;
 }
 
 .fade-enter-active {
-  transition: all 1s ease;
+  transition: all 2.5s ease;
 }
 
 .fade-leave-active {
-  transition: all 1s ease;
+  transition: all 2.5s ease;
   position: absolute;
 }
 
@@ -82,4 +89,34 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+
+.slide-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+.slide-element h1 {
+  font-size: 3.2em; 
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element h2 {
+  font-size: 2em; 
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element p {
+  font-size: 1.1em; 
+}
+
 </style>
