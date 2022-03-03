@@ -11,6 +11,9 @@
         <h1>VERMICULAR</h1>
         <h2>HOUSE</h2>
       </div>
+      <div class="slide-link">
+        <a href="/">MEDIA『Hanakoママ』（マガジンハウス）にてバーミキュラ ハウスが紹介されました。</a>
+      </div>
     </div>
   </div>
 </template>
@@ -60,28 +63,28 @@ export default {
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: 530px;
+  height: 540px;
   display: flex;
 }
 
 .slider-inner {
   position: absolute;
   width: 100vw;
-  height: 530px;
+  height: 540px;
 }
 
 .slide-img {
   width: 100vw;
-  height: 530px;
+  height: 540px;
   object-fit: cover;
 }
 
 .fade-enter-active {
-  transition: all 2.5s ease;
+  transition: all 2.2s ease;
 }
 
 .fade-leave-active {
-  transition: all 2.5s ease;
+  transition: all 2.2s ease;
   position: absolute;
 }
 
@@ -104,19 +107,44 @@ export default {
 }
 
 .slide-element h1 {
-  font-size: 3.2em; 
+  font-size: 3.2em;
   font-weight: bold;
   letter-spacing: 0.15em;
 }
 
 .slide-element h2 {
-  font-size: 2em; 
+  font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.15em;
 }
 
 .slide-element p {
-  font-size: 1.1em; 
+  font-size: 1.1em;
+}
+
+.slide-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background: white;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 5px 10px;
+}
+
+.slide-link a {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 0.6em;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.slide-link a:hover{
+  color: orange;
 }
 
 </style>
