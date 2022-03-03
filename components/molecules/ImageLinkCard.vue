@@ -1,12 +1,13 @@
 <template>
-  <v-card class="rect">
-    <v-hover v-slot="{ hover }" open-delay="200">
-      <v-img class="align-end" :src="imgSrc" :aspect-ratio="15 / 9">
-        <v-sheet :elevation="hover ? 10 : 2" :class="{ 'on-hover': hover }">
-        </v-sheet>
-      </v-img>
-    </v-hover>
-    <v-card-actions>
+  <v-card>
+    <div class="px-5 pt-5" :class="bgColor">
+      <router-link :to="link">
+        <v-img class="align-end rounded" :src="imgSrc" :aspect-ratio="12 / 9">
+        </v-img>
+      </router-link>
+    </div>
+
+    <v-card-actions class="pa-5">
       <div class="text-left">
         {{ title }}
       </div>
@@ -31,13 +32,13 @@ export default {
       type: String,
       default: 'Align',
     },
-    txtBody: {
-      type: String,
-      default: '(txtBody) 2022-03-01開催',
-    },
     btnTxt: {
       type: String,
       default: 'See More',
+    },
+    link: {
+      type: String,
+      default: '/',
     },
     btncolor: {
       type: String,
@@ -45,17 +46,12 @@ export default {
     },
     bgColor: {
       type: String,
-      default: 'primary',
+      default: 'accent',
     },
   },
   data: () => ({
     brandName: config.brand.nameShort,
   }),
-  computed: {
-    getPopupTxtColor() {
-      return this.bgColor + '--text'
-    },
-  },
 }
 </script>
 
