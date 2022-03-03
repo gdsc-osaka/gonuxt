@@ -7,15 +7,9 @@
           sm="6"
           md="4"
           class="pa-md-5"
-          v-for="tile in tiles2Col"
-          :key="tile.title"
+          v-for="card in Cards2Col"
         >
-          <ImageLinkCard
-            :imgSrc="tile.imgSrc"
-            :title="tile.title"
-            :titleSize="tile.titleSize"
-            :txtPosition="tile.txtPosition"
-            :link="tile.link"
+          <ImageLinkCard :imgSrc="card.imgSrc" :title="card.title"
         /></v-col>
       </v-row>
     </section>

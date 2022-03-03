@@ -1,31 +1,27 @@
 export default {
   name: 'ImageLinkLayoutST',
   data: () => ({
-    tiles2Col: [],
-    tiles4Col: [],
+    Cards2Col: [],
+    Cards4Col: [],
   }),
   created: function () {
-    this.tiles2Col = this.getTileData(4)
+    this.Cards2Col = this.getCardData(4)
   },
   methods: {
-    getTileData(ncol) {
-      const tiles = []
-      const positions = ['top', 'center', 'bottom']
+    getCardData(ncol) {
+      const cards = []
       const titleSizeList = ['title-1', 'title-2', 'title-3', 'title-4']
 
       for (let i = 0; i < ncol; i++) {
         const titleSize = titleSizeList[i % titleSizeList.length]
         const imgIndex = (i % 3) + 1
-        const pos = positions[i % positions.length]
 
-        tiles.push({
+        cards.push({
           title: `ImageLinkLayout ${titleSize}`,
-          titleSize: titleSize,
           imgSrc: require(`@/assets/gonuxt/img/sample0${imgIndex}.jpg`),
-          txtPosition: pos,
         })
       }
-      return tiles
+      return cards
     },
   },
 }
