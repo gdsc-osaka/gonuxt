@@ -8,6 +8,7 @@
           md="4"
           class="pa-md-5"
           v-for="card in Cards2Col"
+          :key="card.title"
         >
           <ImageLinkCard :imgSrc="card.imgSrc" :title="card.title"
         /></v-col>
