@@ -30,7 +30,7 @@
       </div>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6"> GONuxT </v-list-item-title>
