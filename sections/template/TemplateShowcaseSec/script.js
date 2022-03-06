@@ -5,6 +5,7 @@ import TextCenterBST from '@/components/templates/TextCenterBST/TextCenterBST.vu
 import IntroAST from '@/components/templates/IntroAST/IntroAST.vue'
 import CardGalleryLayoutST from '@/components/templates/CardGalleryLayoutST/CardGalleryLayoutST.vue'
 import ScrollTopBtn from '@/components/organisms/ScrollTopBtn.vue'
+import ImageLinkLayoutST from '@/components/templates/ImageLinkLayoutST/ImageLinkLayoutST.vue'
 
 export default {
   name: 'TemplateShowcaseSec',
@@ -16,5 +17,6 @@ export default {
     TextCenterBST,
     CardGalleryLayoutST,
     ScrollTopBtn,
+    ImageLinkLayoutST,
   },
 }
