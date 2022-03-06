@@ -4,8 +4,19 @@ import TitleImgLayoutST from '@/components/templates/TitleImgLayoutST/TitleImgLa
 import TextCenterBST from '@/components/templates/TextCenterBST/TextCenterBST.vue'
 import IntroAST from '@/components/templates/IntroAST/IntroAST.vue'
 import CardGalleryLayoutST from '@/components/templates/CardGalleryLayoutST/CardGalleryLayoutST.vue'
+import ScrollTopBtn from '@/components/organisms/ScrollTopBtn.vue'
+import ImageLinkLayoutST from '@/components/templates/ImageLinkLayoutST/ImageLinkLayoutST.vue'
 
 export default {
   name: 'TemplateShowcaseSec',
-  components: { TextCenterST, TileLayoutST, TitleImgLayoutST, IntroAST, TextCenterBST, CardGalleryLayoutST },
+  components: {
+    TextCenterST,
+    TileLayoutST,
+    TitleImgLayoutST,
+    IntroAST,
+    TextCenterBST,
+    CardGalleryLayoutST,
+    ScrollTopBtn,
+    ImageLinkLayoutST,
+  },
 }
