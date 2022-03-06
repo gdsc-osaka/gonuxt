@@ -10,9 +10,23 @@
         <router-link to="/" class="nt-app-bar-link">
           <v-btn elevation="0">Home</v-btn>
         </router-link>
-        <router-link to="/template" class="nt-app-bar-link">
-          <v-btn elevation="0">Templates</v-btn>
-        </router-link>
+        <v-menu open-on-hover offset-y>
+          <template #activator="{ on, attrs }">
+            <v-btn elevation="0" v-bind="attrs" v-on="on"> Template </v-btn>
+          </template>
+          <v-list>
+            <router-link
+              v-for="(page, index) in pages"
+              :key="index"
+              :to="page.nuxtLink"
+              class="nt-app-bar-link"
+            >
+              <v-list-item>
+                <v-list-item-title>{{ page.title }}</v-list-item-title>
+              </v-list-item>
+            </router-link>
+          </v-list>
+        </v-menu>
       </div>
     </v-app-bar>
 
@@ -59,7 +73,7 @@ import config from '@/assets/config'
 
 export default {
   name: 'TheHeader',
-  props: {
+  prop: {
     brandNameFontWeight: {
       type: String,
       default: 'font-weight-bold',
@@ -96,8 +110,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import '@/assets/styles/app';
-
 a {
   text-decoration: none !important;
 }
