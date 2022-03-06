@@ -2,7 +2,7 @@
   <header>
     <v-app-bar dark dense height="64" fixed>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-      <v-toolbar-title :class="brandNameFontWeight">{{
+      <v-toolbar-title class="font-weight-bold">{{
         brandName
       }}</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -73,12 +73,6 @@ import config from '@/assets/config'
 
 export default {
   name: 'TheHeader',
-  prop: {
-    brandNameFontWeight: {
-      type: String,
-      default: 'font-weight-bold',
-    },
-  },
   data: () => ({
     drawer: false,
     group: null,
