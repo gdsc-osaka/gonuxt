@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <HeaderBasic />
+    <TheHeader />
     <v-sheet elevation="0" height="64" width="100%"></v-sheet>
     <v-main>
       <Nuxt />
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import HeaderBasic from '@/components/organisms/HeaderBasic'
+import TheHeader from '@/sections/TheHeader'
 import FooterBasic from '@/components/organisms/FooterBasic'
 
 export default {
   name: 'DefaultLayout',
-  components: { HeaderBasic, FooterBasic },
+  components: { TheHeader, FooterBasic },
 }
 </script>
