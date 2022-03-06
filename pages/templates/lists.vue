@@ -1,5 +1,6 @@
 <template>
   <v-main>
+    <ScrollTopBtn />
     <section class="gnt-sec-2">
       <v-row>
         <v-col cols="12" class="text-center font-weight-bold">
