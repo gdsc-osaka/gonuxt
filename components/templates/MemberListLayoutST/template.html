@@ -1,10 +1,40 @@
 <v-container>
-  <v-row justify="center" class="my-8" no-gutters>
-    <v-col cols="12" sm="11">
+  <v-row class="my-8">
+    <v-col cols="12" sm="6" md="4">
       <div class="mb-8">
-        <MemberCard />
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample01.jpg')"/>
       </div>
-      <v-img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" class="rounded-lg" />
+    </v-col>
+    <v-col cols="12" sm="6" md="4">
+      <div class="mb-8">
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample02.jpg')"/>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4">
+      <div class="mb-8">
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample03.jpg')"/>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4">
+      <div class="mb-8">
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample01.jpg')"/>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4">
+      <div class="mb-8">
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample02.jpg')"/>
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6" md="4">
+      <div class="mb-8">
+        <MemberCard 
+        :imgSrc="require('@/assets/img/gonuxt/sample02.jpg')"/>
+      </div>
     </v-col>
   </v-row>
 </v-container>
