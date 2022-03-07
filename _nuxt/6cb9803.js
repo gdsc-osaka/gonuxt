@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{364:function(e,n,t){e.exports=t.p+"img/sample01.be8c630.jpg"},434:function(e,n,t){"use strict";t.r(n),n.default={name:"ImgTeaser",props:{imgSrc:{type:String,default:t(364)}}}}}]);
