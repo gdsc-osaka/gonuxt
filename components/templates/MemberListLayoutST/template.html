@@ -1,0 +1,25 @@
+<v-container>
+  <v-row>
+    <v-col cols="12">
+      <h2 style="text-align: center">（タイトル）</h2>
+      <p style="text-align: center">（サブタイトル）</p>
+    </v-col>
+  </v-row>
+  <v-row class="d-flex justify-left align-center">
+    <v-col
+      cols="12"
+      sm="6"
+      md="4"
+      class="pa-md-5 gonuxt-tile"
+      v-for="tile in tiles"
+      :key="tile.txtBody"
+    >
+      <MemberCard
+        :imgSrc="tile.imgSrc"
+        :txtBody="tile.title"
+        :name="tile.titleSize"
+        :job="tile.txtPosition"
+      />
+    </v-col>
+  </v-row>
+</v-container>
