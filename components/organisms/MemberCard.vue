@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-5">
-    <v-img :src="imgSrc" class="rounded-circle img  mb-5" height="5rem" width="5rem"/>
-    <p class="mx-5" style="display: inline-block">{{ txtBody }}</p>
+  <div class="mx-5 py-2 px-5" :style="'background-color:'+bgcolor">
+    <v-img :src="imgSrc" class="rounded-circle img" height="5rem" width="5rem"/>
+    <p class="my-5" style="display: inline-block; text-align:center;">{{ txtBody }}</p>
     <p style="text-align:center;">
       <strong>{{ name }}</strong>
       <br>
@@ -15,7 +15,7 @@ export default {
   props: {
     imgSrc: {
       type: String,
-      default: "https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.png",
+      default: "https://res.cloudinary.com/uisual/image/upload/assets/icons/avatar.svg",
     },
     txtBody: {
       type: String,
@@ -27,11 +27,11 @@ export default {
     },
     job: {
       type: String,
-      default: 'CEO of Company'
+      default: '（役職等）'
     },
     bgcolor: {
       type: String,
-      default: 'black'
+      default: '#ffffff'
     },
   },
 }
