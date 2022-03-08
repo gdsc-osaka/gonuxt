@@ -2,7 +2,7 @@
   <v-card class="mx-auto" max-width="344">
     <v-img :src="imgSrc" class="border" height="200px"></v-img>
     <v-card-title class="justify-center">{{ title }}</v-card-title>
-    <v-card-subtitle>{{ mainText }}</v-card-subtitle>
+    <v-card-subtitle class="text-center">{{ mainText }}</v-card-subtitle>
     <v-card-actions>
       <v-card-text class="orange--text"> 詳細 </v-card-text>
       <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        <v-card-text>{{ subText }}</v-card-text>
+        <v-card-text class="text-center">{{ subText }}</v-card-text>
       </div>
     </v-expand-transition>
   </v-card>
