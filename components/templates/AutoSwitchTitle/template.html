@@ -1,4 +1,4 @@
-<div>
+<section>
   <div class="slide-outer" id="slide-outers">
     <transition name="fade">
       <div v-for="slide in Slides" :key="slide.id" class="slide-inner">
@@ -6,7 +6,7 @@
       </div>
     </transition>
     <div class="slide-element">
-      <p class="mb-2">Subtitle</p>
+      <p class="mb-1">Subtitle</p>
       <h1 class="mb-5">Title</h1>
       <h2>
         (Text)<br />
@@ -18,4 +18,4 @@
       <a href="#" v-on:click.stop.prevent="openWindow">btnTxt</a>
     </p>
   </div>
-</div>
+</section>
