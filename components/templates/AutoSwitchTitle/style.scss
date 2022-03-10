@@ -1,0 +1,66 @@
+@import '@/assets/styles/app';
+
+.slide-outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+}
+
+.slider-inner {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 64px);
+}
+
+.slide-img {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  object-fit: cover;
+}
+
+.fade-enter-active {
+  transition: all 5s ease;
+}
+
+.fade-leave-active {
+  transition: all 5s ease;
+  position: absolute;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-element {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 0 3px black;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.slide-element h1 {
+  font-size: 6vmax;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element h2 {
+  font-size: 2.5vmax;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element p {
+  font-size: 2vmax;
+}

@@ -1,0 +1,16 @@
+<div>
+  <div class="slide-outer" id="slide-outers">
+    <transition name="fade">
+      <div v-for="slide in Slides" :key="slide.id" class="slide-inner">
+        <img class="slide-img" :src="slide.img" />
+      </div>
+    </transition>
+    <div class="slide-element">
+      <p class="mb-2">Subtitle</p>
+      <h1 class="mb-5">Title</h1>
+      <h2>(Text)<br>  fjniap vaeip vnaien vnaipe jniap vaeip vnaien vnaipe</h2>
+    </div>
+
+    <ScrollDownBtn btnTxt="btnTxt"/>
+  </div>
+</div>
