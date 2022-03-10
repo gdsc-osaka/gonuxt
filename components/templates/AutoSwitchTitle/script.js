@@ -1,7 +1,4 @@
-import ScrollDownBtn from '@/components/organisms/ScrollDownBtn.vue'
-
 export default {
-  components: { ScrollDownBtn },
   
   data() {
     return {
