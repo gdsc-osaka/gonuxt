@@ -1,6 +1,6 @@
 <template>
   <div class="mx-5 py-2 px-5" :style="'background-color:'+bgcolor">
-    <v-img :src="imgSrc" class="rounded-circle img" height="5rem" width="5rem"/>
+    <v-img :src="imgSrc" class="rounded-circle img" :height="clacImgSize()" :width="clacImgSize()" />
     <p class="my-5" style="display: inline-block; text-align:center;">{{ txtBody }}</p>
     <p style="text-align:center;">
       <strong>{{ name }}</strong>
@@ -33,6 +33,15 @@ export default {
       type: String,
       default: '#ffffff'
     },
+    imgSize: {
+      type: String,
+      default: '5'
+    },
+  },
+  methods: {
+    clacImgSize() {
+      return this.imgSize + 'rem';
+    }
   },
 }
 </script>
