@@ -11,14 +11,15 @@
       sm="6"
       md="4"
       class="pa-md-5 gonuxt-tile"
-      v-for="tile in tiles"
-      :key="tile.txtBody"
+      v-for="member in members"
+      :key="member.txtBody"
     >
       <MemberCard
-        :imgSrc="tile.imgSrc"
-        :txtBody="tile.title"
-        :name="tile.titleSize"
-        :job="tile.txtPosition"
+        :imgSrc="member.imgSrc"
+        :txtBody="member.title"
+        :name="member.titleSize"
+        :job="member.txtPosition"
+        imgSize="5"
       />
     </v-col>
   </v-row>
