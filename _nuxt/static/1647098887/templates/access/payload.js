@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/templates/access", {data:[{}],fetch:{},mutations:void 0});
