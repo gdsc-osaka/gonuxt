@@ -79,24 +79,29 @@ export default {
     brandName: config.brand.nameShort,
     pages: [
       {
-        icon: 'mdi-account',
+        icon: 'mdi-star',
         title: 'Key Visual',
         nuxtLink: '/templates/key-visuals',
       },
       {
-        icon: 'mdi-account',
+        icon: 'mdi-text',
         title: 'Text',
         nuxtLink: '/templates/texts',
       },
       {
-        icon: 'mdi-account',
+        icon: 'mdi-cards',
         title: 'Card',
         nuxtLink: '/templates/cards',
       },
       {
-        icon: 'mdi-account',
+        icon: 'mdi-list-status',
         title: 'List',
         nuxtLink: '/templates/lists',
+      },
+      {
+        icon: 'mdi-google-maps',
+        title: 'Access',
+        nuxtLink: '/templates/access',
       },
     ],
   }),
