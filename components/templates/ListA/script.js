@@ -10,6 +10,7 @@ export default {
         { text: '概要', value: 'overview', sortable: false },
       ],
       schedules: schedules,
+      itemsPerPage: 5,
     }
   },
   methods: {

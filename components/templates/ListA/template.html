@@ -7,7 +7,7 @@
       :items="schedules"
       class="elevation-2"
       :footer-props="{ 'items-per-page-text' : '行/ページ:' }"
-      items-per-page="5"
+      :items-per-page="itemsPerPage"
     >
       <template v-slot:item.name="{ item }">
         <v-chip :color="getColor(item.name)" dark>
