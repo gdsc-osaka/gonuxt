@@ -79,7 +79,7 @@ export default {
     brandName: config.brand.nameShort,
     pages: [
       {
-        icon: 'mdi-laptop',
+        icon: 'mdi-star',
         title: 'Key Visual',
         nuxtLink: '/templates/key-visuals',
       },
@@ -97,6 +97,11 @@ export default {
         icon: 'mdi-list-status',
         title: 'List',
         nuxtLink: '/templates/lists',
+      },
+      {
+        icon: 'mdi-google-maps',
+        title: 'Access',
+        nuxtLink: '/templates/access',
       },
     ],
   }),
