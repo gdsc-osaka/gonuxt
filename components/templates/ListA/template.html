@@ -1,0 +1,19 @@
+<section class="gnt-sec-3 d-flex justify-center">
+  <div>
+    <h3 class="mb-4">イベント概要</h3>
+    
+    <v-data-table
+      :headers="headers"
+      :items="schedules"
+      class="elevation-2"
+      :footer-props="{ 'items-per-page-text' : '行/ページ:' }"
+      items-per-page="5"
+    >
+      <template v-slot:item.name="{ item }">
+        <v-chip :color="getColor(item.name)" dark>
+          {{ item.name }}
+        </v-chip>
+      </template>
+    </v-data-table>
+  </div>
+</section>
