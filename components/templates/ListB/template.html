@@ -7,6 +7,7 @@
         :key="i"
         :color="event.color"
         small
+        class="event-item"
       >
         <template v-slot:opposite>
           <v-img :src="event.img" class="event-img" v-if="i%2==0"></v-img>
@@ -16,7 +17,7 @@
           ></span>
           <v-img :src="event.img" max-width="200px" class="event-img" v-if="i%2==1"></v-img>
         </template>
-        <v-card class="elevation-2">
+        <v-card class="elevation-2 event-card">
           <v-card-title :class="`headline font-weight-light mb-0 ${event.color}--text`">
             {{ event.title }}
           </v-card-title>

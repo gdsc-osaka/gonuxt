@@ -5,5 +5,9 @@
   text-align: center;
   margin: 0 60px;
   width: 20vmax;
-  max-width: 200px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
 }
