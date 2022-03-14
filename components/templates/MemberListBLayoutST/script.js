@@ -1,7 +1,7 @@
-import LigincCard from '@/components/organisms/LigincCard.vue'
+import MemberCardB from '@/components/organisms/MemberCardB.vue'
 
 export default {
-    components: { LigincCard },
+    components: { MemberCardB },
     data() {
       return {
       }
