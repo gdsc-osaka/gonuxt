@@ -17,25 +17,23 @@ export default {
     },
   },
 
-  
+
   data: () => ({
     questions: [
-      {title:"Lorem ipsum dolor?",
-      txtBody:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      {title:"Question",
+      txtBody:"(Answer) - fenaio;efi vaenio;a vanwi;eo venapaionvpaw",
       icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
       },
-      {title:"Lorem ipsum dolor?",
-      txtBody:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      {title:"Question",
+      txtBody:"(Answer) - fenaio;efi vaenio;a vanwi;eo venapaionvpaw",
+      icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
+      },{title:"Question",
+      txtBody:"(Answer) - fenaio;efi vaenio;a vanwi;eo venapaionvpaw",
+      icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
+      },{title:"Question",
+      txtBody:"(Answer) - fenaio;efi vaenio;a vanwi;eo venapaionvpaw",
       icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
       },
-      {title:"Lorem ipsum dolor?",
-      txtBody:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
-      },
-      {title:"Lorem ipsum dolor?",
-      txtBody:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      icon: "https://res.cloudinary.com/uisual/image/upload/assets/icons/question.svg"
-      }, 
     ],
   }),
 }
