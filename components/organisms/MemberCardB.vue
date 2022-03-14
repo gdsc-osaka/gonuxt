@@ -90,6 +90,7 @@ export default {
 
   .card {
     transition: 2s;             /* 2秒かけて動く */
+    height: 167px;
   }
  
   .card:hover {
