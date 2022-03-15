@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import events from '@/components/templates/scheduleA/scheduleData.json'
+import events from '@/components/templates/ScheduleA/ScheduleData.json'
 
 export default {
   data: () => ({
