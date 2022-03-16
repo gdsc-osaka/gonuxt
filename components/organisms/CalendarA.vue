@@ -39,14 +39,30 @@
 </template>
 
 <script>
-import events from '@/components/templates/ScheduleA/ScheduleData.json'
-
 export default {
+  props: {
+    events: {
+      type: Array,
+      default: () => [
+        {
+          name: '(name) Event 1',
+          start: '2022-3-01 10:00',
+          end: '2022-3-03 17:00',
+          color: 'yellow',
+        },
+        {
+          name: '(name) Event 2',
+          start: '2022-3-17 09:00',
+          end: '2022-3-18 17:00',
+          color: 'purple',
+        },
+      ],
+    },
+  },
   data: () => ({
     type: 'month',
     weekday: [1, 2, 3, 4, 5, 6, 0],
     dayOfWeek: ['日', '月', '火', '水', '木', '金', '土'],
-    events: events,
     mode: 'stack',
     value: '',
     colors: [
