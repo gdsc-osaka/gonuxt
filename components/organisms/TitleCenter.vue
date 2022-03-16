@@ -27,19 +27,19 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Title (Center)',
+      default: '(title) Title',
     },
     txtBody: {
       type: String,
-      default: '(Text Body) - djfaidsjfoiaj iodjfaidsjf oiajiodjfaids jf;oiajiodjfa idsjf;oia jiodjfai dsjf;oiaji odjfaid sjf;oiajiodjfa  idsjf;oiajio djfaidsjf;oiaji odjfaidsj f;oiajiodjf aidsjf;oiajiod jfaidsjf;oiajiodj faidsjf;o iajio',
+      default: '(txtBody) - djfaidsjfoiaj iodjfaidsjf oiajiodjfaids jf;oiajiodjfa idsjf;oia jiodjfai dsjf;oiaji odjfaid sjf;oiajiodjfa  idsjf;oiajio djfaidsjf;oiaji odjfaidsj f;oiajiodjf aidsjf;oiajiod jfaidsjf;oiajiodj faidsjf;o iajio',
     }, 
     btnTxt: {
       type: String,
-      default: 'Sample Button Text'
+      default: '(btnTxt) Button Text'
     },
     subTxt: {
       type: String,
-      default: 'Sample Subtext'
+      default: '(subTxt) Sample Subtext'
     },
     btnColor: {
       type: String,
