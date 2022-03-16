@@ -17,7 +17,7 @@ export default {
         const imgIndex = (i % 3) + 1
 
         cards.push({
-          title: `ImageLinkLayout ${titleSize}`,
+          title: `(title) ${titleSize}`,
           imgSrc: require(`@/assets/gonuxt/img/sample0${imgIndex}.jpg`),
         })
       }
