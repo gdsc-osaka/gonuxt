@@ -1,0 +1,64 @@
+<div>
+  <header id="top">
+    <v-app-bar dark dense height="64">
+      <v-app-bar-nav-icon
+        class="nav"
+        @click="drawer = true"
+      ></v-app-bar-nav-icon>
+      <v-toolbar-title class="font-weight-bold"> {{ Name }} </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <div class="d-none d-md-block bar">
+        <router-link
+          v-for="(page, index) in pages"
+          :key="index"
+          :to="page.nuxtLink"
+          class="nt-app-bar-link"
+          ><v-btn elevation="0">{{ page.title }}</v-btn>
+        </router-link>
+      </div>
+    </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" fixed temporary>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="text-h6"> OUAC </v-list-item-title>
+          <v-list-item-subtitle> メニュー </v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+      <v-divider></v-divider>
+      <v-list nav dense>
+        <v-list-item-group
+          v-model="group"
+          active-class="primary--text text--accent-4"
+        >
+          <NuxtLink v-for="page in pages" :key="page.title" :to="page.nuxtLink">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon v-text="page.icon"></v-icon>
+              </v-list-item-icon>
+              <v-list-item-title v-text="page.title"></v-list-item-title>
+            </v-list-item>
+          </NuxtLink>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+  </header>
+
+  <v-row justify="space-around" class="my-8">
+    <v-col cols="12" sm="6">
+      <div>
+        <img :src="imgSrc" alt="sample" />
+      </div>
+    </v-col>
+    <v-col cols="12" sm="6">
+      <div class="mb-8">
+        <h1>刺激に溢れたカーライフを</h1>
+        <h2>始めてみませんか？</h2>
+        <h3>主将</h3>
+      </div>
+    </v-col>
+  </v-row>
+  <div>
+    <a href="#top" class="gotop">トップへ</a>
+  </div>
+</div>
