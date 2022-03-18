@@ -1,7 +1,6 @@
 <template>
   <v-col cols="12" sm="2">
     <div class="card" @mouseover="imageChange()" @mouseleave="imageReturn()">
-      <div class="card2">
       <div :class=class1>  
       <v-layout justify-center>
           <v-avatar size="100">
@@ -18,9 +17,7 @@
                 <v-img :src="imgSrc2"/>
           </v-avatar>
         </v-layout>
-        <small style="font-weight:bold; text-align:center">{{ name }}</small>
-        <small style="text-align:center"><br>{{ txt2 }}</small>
-      </div>
+        <small style="text-align:center">{{ name }}<br>{{ txt2 }}</small>
       </div>
     </div>
   </v-col>
@@ -62,12 +59,12 @@ export default {
     imageChange(){
       setTimeout(() => {
       this.class1 = "hidden";
-      this.class2 = "open-reverse";}, 250)
+      this.class2 = "open-reverse";}, 500)
     },
     imageReturn(){
       setTimeout(() => {
       this.class1 = "open";
-      this.class2 = "hidden";}, 250)
+      this.class2 = "hidden";}, 500)
     }
   }
 
@@ -91,16 +88,12 @@ export default {
     text-align: center;
   }
 
-  .card { 
-    height: 167px;
-  }
-
-  .card2 {
-    transition: 1s;             /* 2秒かけて動く */  
+  .card {
+    transition: 2s;             /* 2秒かけて動く */
     height: 167px;
   }
  
-  .card:hover .card2{ 
+  .card:hover {
     transform: rotateY(180deg);  /* マウスオーバー時に回転 */
   }
 
