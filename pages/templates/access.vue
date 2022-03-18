@@ -12,7 +12,7 @@
     <section class="gnt-sec-2">
       <v-row>
         <v-col cols="12" class="text-center">
-          <h2>No.7 AccessA</h2>
+          <h2>No.1 AccessA</h2>
         </v-col>
         <AccessA />
       </v-row>
