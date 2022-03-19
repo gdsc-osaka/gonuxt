@@ -12,9 +12,18 @@
     <section class="gnt-sec-2">
       <v-row>
         <v-col cols="12" class="text-center">
-          <h2>No.5: MemberListLayoutST</h2>
+          <h2>No.1: MemberListLayoutST</h2>
         </v-col>
         <MemberListLayoutST />
+      </v-row>
+    </section>
+    <v-divider></v-divider>
+    <section class="gnt-sec-2">
+      <v-row>
+        <v-col cols="12" class="text-center">
+          <h2>No.2: MemberListBLayoutST</h2>
+        </v-col>
+        <MemberListBLayoutST />
       </v-row>
     </section>
     <v-divider></v-divider>
@@ -23,10 +32,11 @@
 
 <script scoped>
 import MemberListLayoutST from '@/components/templates/MemberListLayoutST/MemberListLayoutST.vue'
+import MemberListBLayoutST from '@/components/templates/MemberListBLayoutST/MemberListBLayoutST.vue'
 
 export default {
   name: 'TextPage',
-  components: { MemberListLayoutST },
+  components: { MemberListLayoutST, MemberListBLayoutST },
   head: {
     meta: [
       { hid: 'og:title', property: 'og:title', content: 'List' },

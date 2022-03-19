@@ -2,16 +2,18 @@
   <v-container fluid>
     <section class="gnt-sec-3">
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="pa-5">
           <h2>Without horizontal scroll</h2>
         </v-col>
       </v-row>
-      <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-row
+        class="d-flex justify-left align-center gont-tile-layout-template px-3 px-sm-0"
+      >
         <v-col
           cols="12"
           sm="6"
           md="4"
-          class="pa-md-5 gonuxt-tile"
+          class="pa-3 pa-md-5 gonuxt-tile"
           v-for="tile in tiles2Col"
           :key="tile.title"
         >
@@ -29,7 +31,7 @@
     </section>
     <section class="gnt-sec-3">
       <v-row>
-        <v-col cols="12">
+        <v-col cols="12" class="pa-5">
           <h2>With horizontal scroll</h2>
           <p>
             Add "flex-nowrap" and "overflow-auto" into the class of the v-row
@@ -38,13 +40,13 @@
         </v-col>
       </v-row>
       <v-row
-        class="d-flex flex-nowrap justify-left align-center gont-tile-layout-template gnt-card-gallery-horizontal-list overflow-auto"
+        class="d-flex flex-nowrap justify-left align-center gont-tile-layout-template gnt-card-gallery-horizontal-list overflow-auto px-3 px-sm-0"
       >
         <v-col
           cols="12"
           sm="6"
           md="4"
-          class="pa-md-5 gonuxt-tile"
+          class="pa-3 pa-md-5 gonuxt-tile"
           v-for="tile in tiles2Col"
           :key="tile.title"
         >

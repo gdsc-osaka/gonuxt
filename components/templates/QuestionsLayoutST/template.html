@@ -1,0 +1,29 @@
+<section class="gnt-sec-2">
+  <v-container>
+    <v-row class="justify-left align-center px-3 px-sm-0">
+      <v-col
+        cols="12"
+        sm="6"
+        v-for="question in questions"
+        :key="question.title"
+      >
+        <QuestionCard
+          :icon="question.icon"
+          :title="question.title"
+          :txtBody="question.txtBody"
+        />
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col cols="12">
+        <p style="text-align: center; font-size: 1.25rem">
+          {{contact_text}}
+          <a href="contact_link" style="color: rgba(0, 0, 0, 0.87)">
+            {{contact_link_text}}
+          </a>
+        </p>
+      </v-col>
+    </v-row>
+  </v-container>
+</section>

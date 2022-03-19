@@ -103,6 +103,11 @@ export default {
         title: 'Access',
         nuxtLink: '/templates/access',
       },
+      {
+        icon: 'mdi-calendar-month',
+        title: 'Schedule',
+        nuxtLink: '/templates/schedule',
+      },
     ],
   }),
 }
