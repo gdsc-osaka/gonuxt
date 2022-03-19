@@ -1,18 +1,40 @@
 <section class="gnt-sec-2">
-  <v-container fluid>
-    <section class="gnt-sec-3">
-      <v-row class="d-flex justify-left align-center gont-tile-layout-template">
-        <v-col
-          cols="12"
-          sm="6"
-          md="4"
-          class="pa-md-5"
-          v-for="card in Cards2Col"
-          :key="card.title"
-        >
-          <ImageLinkCard :imgSrc="card.imgSrc" :title="card.title"
-        /></v-col>
-      </v-row>
-    </section>
-  </v-container>
+  <section class="gnt-sec-3 black white--text">
+    <v-container class="justify-content-center">
+    <h1 class="my-10" style ="text-align: center; font-weight:500">CONTACT US</h1>
+    <v-row class="d-flex justify-content-center">
+      <v-col
+        cols="12"
+        md="6"
+        class="pa-md-10"
+      >
+        <h4>ー メールからお問い合わせ</h4>
+        <p>メールの場合は以下のメールアドレスからお問い合わせいただけます。</p>
+        <h4>********@gmail.com</h4>
+      </v-col>
+      <v-col
+      cols="12"
+      md="6"
+      class="pa-md-10"
+      >
+        <h4>ー 電話からお問い合わせ</h4>
+        <p>お電話の場合は以下の電話番号からお問い合わせいただけます。</p>
+        <h4>01-2345-6789</h4>
+      </v-col>
+    </v-row>
+    <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-col
+        cols="12"
+        sm="6"
+        md="3"
+        class="pa-10"
+        v-for="card in cards"
+        :key="card.link"
+      >
+        <a :href="card.link"><v-img :src="card.imgSrc" /></a>
+      </v-col>
+      
+    </v-row>
+   </v-container>
+  </section>
 </section>

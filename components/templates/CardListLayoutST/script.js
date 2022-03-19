@@ -1,27 +1,15 @@
 export default {
-  name: 'ImageLinkLayoutST',
+  name: 'CardListLayoutST',
   data: () => ({
-    Cards2Col: [],
-    Cards4Col: [],
+    cards:[
+      {imgSrc:require('@/assets/gonuxt/img/sample01.jpg'),
+      link:"/dev"},
+      {imgSrc:require('@/assets/gonuxt/img/sample01.jpg'),
+      link:"/"},
+      {imgSrc:require('@/assets/gonuxt/img/sample01.jpg'),
+      link:"/"},
+      {imgSrc:require('@/assets/gonuxt/img/sample01.jpg'),
+      link:"/"},
+    ]
   }),
-  created: function () {
-    this.Cards2Col = this.getCardData(4)
-  },
-  methods: {
-    getCardData(ncol) {
-      const cards = []
-      const titleSizeList = ['title-1', 'title-2', 'title-3', 'title-4']
-
-      for (let i = 0; i < ncol; i++) {
-        const titleSize = titleSizeList[i % titleSizeList.length]
-        const imgIndex = (i % 3) + 1
-
-        cards.push({
-          title: `(title) ${titleSize}`,
-          imgSrc: require(`@/assets/gonuxt/img/sample0${imgIndex}.jpg`),
-        })
-      }
-      return cards
-    },
-  },
 }
