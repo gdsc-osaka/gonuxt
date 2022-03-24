@@ -5,7 +5,7 @@
   </v-container>
 </template>
 
-<script>
+<script scoped>
 import KeyVisualSec from '@/sections/KeyVisualSec/KeyVisualSec.vue'
 import AboutGonuxtSec from '@/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
 

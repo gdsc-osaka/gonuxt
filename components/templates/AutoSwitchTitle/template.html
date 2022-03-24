@@ -1,0 +1,21 @@
+<section>
+  <div class="slide-outer" id="slide-outers">
+    <transition name="fade">
+      <div v-for="slide in Slides" :key="slide.id" class="slide-inner">
+        <img class="slide-img" :src="slide.img" />
+      </div>
+    </transition>
+    <div class="slide-element">
+      <p class="mb-1">Subtitle</p>
+      <h1 class="mb-5">Title</h1>
+      <h2>
+        (Text)<br />
+        fjniap vaeip vnaien vnaipe jniap vaeip vnaien vnaipe
+      </h2>
+    </div>
+
+    <p class="scroll js-scroll">
+      <a href="#" v-on:click.stop.prevent="openWindow">btnTxt</a>
+    </p>
+  </div>
+</section>
