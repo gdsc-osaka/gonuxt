@@ -1,14 +1,14 @@
 <v-container fluid>
     <v-row justify="center" class="my-8 d-flex justify-center align-center" no-gutters>
-        <div v-for="Card in Cards" :key="Card.id" class="my-4">
+        <v-col cols="12" v-for="Card in Cards" :key="Card.id" class="my-4">
           <ImageTextCard
             :title="Card.title"
             :txtBody="Card.txtBody"
             :bgColor="Card.bgColor"
             :lists="Card.lists"
             :imgLeft="Card.imgLeft"
-            :imgSrc="imgSrc"
+            :imgSrc="Card.imgSrc"
             />
-        </div>
+        </v-col>
     </v-row>
   </v-container>
