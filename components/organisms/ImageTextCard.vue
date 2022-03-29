@@ -1,13 +1,13 @@
 <template>
-  <v-row justify="center" class="text-left" no-gutters>
-    <v-col cols="12" sm="11">
+  <v-container>
     <div class="ui-section-feature-layout ui-layout-grid ui-layout-grid-2" :style="{background: bgColor}">
         <v-img
             :style= " imgLeft ? 'order:2' : 'order:3' "
-            v-bind:src="imgSrc" 
+            :src="imgSrc" 
+            height="100%"
             alt="#" 
         />
-        <div class="sort">
+        <div class="sort pa-8">
             <h2><b>{{ title }}</b></h2>
             <p class="ui-text-intro">
             <span v-text="txtBody"></span>
@@ -19,8 +19,7 @@
             </ul>
         </div>    
     </div> 
-    </v-col>
-  </v-row>           
+  </v-container>           
 </template>
 
 <script>

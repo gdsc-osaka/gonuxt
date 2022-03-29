@@ -19,7 +19,7 @@ export default {
           {id: 3, content: 'クスノキ'},
         ],
         imgLeft: false,
-        imgsrc: require('@/assets/gonuxt/img/sample02.jpg')
+        imgSrc: require('@/assets/gonuxt/img/sample02.jpg')
       },
       {
         title: 'タイトル',
@@ -31,7 +31,7 @@ export default {
           {id: 3, content: 'クスノキ'},
         ],
         imgLeft: true,
-        imgsrc: require('@/assets/gonuxt/img/sample03.jpg')
+        imgSrc: require('@/assets/gonuxt/img/sample03.jpg')
       }
     ]
   })
