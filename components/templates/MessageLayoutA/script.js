@@ -6,7 +6,7 @@ export default {
     },
     imgSrc2: {
       type: String,
-      default: require('@/assets/gonuxt/img/2-3/sample01.jpg'),
+      default: require('@/assets/gonuxt/img/sample01.jpg'),
     },
     name: {
       type: String,

@@ -27,16 +27,25 @@
       </v-row>
     </section>
     <v-divider></v-divider>
+    <section class="gnt-sec-2">
+      <v-row class="pb-16 my-8">
+        <v-col cols="12" class="text-center">
+          <h2>No.3: MemberIntroST</h2>
+        </v-col>
+        <MemberIntroST />
+      </v-row>
+    </section>
   </v-main>
 </template>
 
 <script scoped>
 import MemberListLayoutST from '@/components/templates/MemberListLayoutST/MemberListLayoutST.vue'
 import MemberListBLayoutST from '@/components/templates/MemberListBLayoutST/MemberListBLayoutST.vue'
+import MemberIntroST from '@/components/templates/MemberIntroST/MemberIntroST.vue'
 
 export default {
   name: 'TextPage',
-  components: { MemberListLayoutST, MemberListBLayoutST },
+  components: { MemberListLayoutST, MemberListBLayoutST, MemberIntroST },
   head: {
     meta: [
       { hid: 'og:title', property: 'og:title', content: 'List' },

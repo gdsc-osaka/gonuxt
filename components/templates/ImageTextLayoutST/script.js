@@ -9,30 +9,6 @@ export default {
       {
 
       },
-      {
-        title: 'タイトル',
-        txtBody: '説明文',
-        bgColor: '#00F040',
-        lists: [
-          {id: 1, content: 'さくら'},
-          {id: 2, content: 'ヤシ'},
-          {id: 3, content: 'クスノキ'},
-        ],
-        imgLeft: false,
-        imgSrc: require('@/assets/gonuxt/img/sample02.jpg')
-      },
-      {
-        title: 'タイトル',
-        txtBody: '説明文',
-        bgColor: '#F00040',
-        lists: [
-          {id: 1, content: 'さくら'},
-          {id: 2, content: 'ヤシ'},
-          {id: 3, content: 'クスノキ'},
-        ],
-        imgLeft: true,
-        imgSrc: require('@/assets/gonuxt/img/sample03.jpg')
-      }
     ]
   })
 }
