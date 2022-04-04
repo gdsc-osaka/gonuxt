@@ -1,0 +1,26 @@
+@import '@/assets/styles/app';
+
+$breakPoint: 1000px;
+
+.flame0 {
+  width: 97%;
+  height: 250px;
+  background-color: rgb(226, 225, 225);
+  margin: 0 auto;
+  @media only screen and (max-width: $breakPoint) {
+    height: 500px;
+  }
+}
+.flame1 {
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  @media only screen and (max-width: $breakPoint) {
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+  }
+}
+.flame2 {
+  margin-top: -20px;
+}
